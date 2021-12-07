@@ -1,3 +1,5 @@
+import { Box } from "@material-ui/core";
+
 
 import Banner from "./Banner";
 import Categories from "./Categories";
@@ -7,8 +9,10 @@ const home = () => {
     return (
         <>
             <Banner />
+            <Box style={{display:"flex"}}>
             <Categories />
             <Posts/>
+            </Box>
         </>
     )
 }
