@@ -3,20 +3,22 @@ import { makeStyles, Box, Typography } from '@material-ui/core';
 const useStyle = makeStyles({
     image: {
         width: '100%',
-        background: `url(${'https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg'}) center/55% repeat-x #000`,
-        height: '50vh',
+        background: `url(${'https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg'}) center/100% repeat-x #000`,
+        height: '80vh',
         display: 'flex',
+
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
         '& :first-child': {
             fontSize: 70,
-            color: '#FFFFFF',
-            lineHeight: 1
+            color: 'yellow',
+            lineHeight: 1,
         },
         '& :last-child': {
             fontSize: 20,
-            background: '#FFFFFF',
+            // background: '#FFFFFF',
+            color: 'grey'
         }
     }
 })

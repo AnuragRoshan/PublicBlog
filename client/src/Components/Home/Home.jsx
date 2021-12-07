@@ -1,4 +1,4 @@
-import { Box } from "@material-ui/core";
+import { Box, Grid } from "@material-ui/core";
 
 
 import Banner from "./Banner";
@@ -9,10 +9,14 @@ const home = () => {
     return (
         <>
             <Banner />
-            <Box style={{display:"flex"}}>
+            <Grid container>
+                <Grid item lg={2} xs={12} sm={2}>
             <Categories />
+            </Grid>
+            <Grid item lg={10} xs={12} sm={10} >
             <Posts/>
-            </Box>
+            </Grid>
+            </Grid>
         </>
     )
 }

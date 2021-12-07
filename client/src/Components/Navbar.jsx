@@ -6,7 +6,7 @@ const useStyles = makeStyles({
         color: 'grey'
     },
     container: {
-        padding: 30,
+        padding: 29,
         justifyContent: 'center'
         , '&>*': {
             padding: 20
