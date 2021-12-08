@@ -1,5 +1,5 @@
 
-import { AppBar, Toolbar, Typography, makeStyles, colors } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, makeStyles} from '@material-ui/core';
 const useStyles = makeStyles({
     component: {
         background: '#ffffff',

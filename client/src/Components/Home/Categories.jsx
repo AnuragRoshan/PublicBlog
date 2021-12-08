@@ -1,5 +1,4 @@
 import { Button, makeStyles, Table, TableCell, TableRow, TableBody, TableHead } from "@material-ui/core"
-import transitions from "@material-ui/core/styles/transitions";
 import { categories } from "../Constants/data";
 const useStyle = makeStyles({
     create: {
