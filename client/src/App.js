@@ -6,16 +6,32 @@ import { Box } from '@material-ui/core';
 // import component
 import Navbar from './Components/Navbar';
 import Home from './Components/Home/Home';
+import DetailView from './Components/Home/Post/DetailView';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
 
+} from "react-router-dom";
 
 function App() {
   return (
-    <>
-    <Navbar/>
+    
+    
+    <Router>
     <Box style={{marginTop:122}}>
-   <Home/>
+<Navbar/>
+    <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route exact path="/detail">
+            <DetailView/>
+          </Route>
+        </Switch>
     </Box>
-  </>
+    </Router>
+  
   );
 }
 
