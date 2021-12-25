@@ -9,28 +9,28 @@ const useStyles = makeStyles({
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'column',
-        height: 350,
+        // width:'100%',
+        height: 480,
         '& > *': {
-            padding: '0 5px 5px 5px'
-        }
-            
+            padding: '0 5px 15px 5px'
+        }  
         },
         image: {
             width: '100%',
         objectFit: 'cover',
         borderRadius: '10px 10px 0 0',
-        height: 150
+        height: 290
         },
         textColor: {
             color: '#878787',
-            fontSize: 12
+            fontSize: 18
         },
         heading: {
-            fontSize: 18,
+            fontSize: 21,
             fontWeight: 600
         },
         detail: {
-            fontSize: 14,
+            fontSize: 18,
             wordBreak: 'break-word'
         }
     

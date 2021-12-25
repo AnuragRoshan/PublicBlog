@@ -1,7 +1,7 @@
 import { Box, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles";
 import {Edit,Delete} from '@material-ui/icons';
-
+import { Link } from "react-router-dom";
 const useStyle=makeStyles((theme)=>({
     image:{
 width:'100%',
@@ -56,7 +56,7 @@ const DetailView = () => {
         <Box className={classes.container}>
             <img src={url} alt="banner" className={classes.image}/>
             <Box className={classes.icons}>
-                <Edit  className={classes.icon} color='action'/>
+                <Link to="/update"><Edit  className={classes.icon} color='action'/></Link>
                 <Delete className={classes.icon} color='action'/>
             </Box>
             <Typography className={classes.heading}>Title of Blog</Typography>

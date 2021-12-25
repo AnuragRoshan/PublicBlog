@@ -1,5 +1,6 @@
 import { Button, makeStyles, Table, TableCell, TableRow, TableBody, TableHead } from "@material-ui/core"
 import { categories } from "../Constants/data";
+import { Link } from "react-router-dom";
 const useStyle = makeStyles({
     create: {
         margin: 20,
@@ -13,14 +14,18 @@ const useStyle = makeStyles({
     },
     table: {
         border: "1px solid rgba(224,224,224,1)"
+    },
+    link:{
+        textDecoration:"none",
+        color:"inherit"
     }
 })
 
 const Categories = () => {
     const classes = useStyle();
-    return (
+    return (  
         <>
-            <Button variant="contained" className={classes.create}>Create Blog</Button>
+           <Link to="/create" className={classes.link}> <Button variant="contained" className={classes.create}>Create Blog</Button></Link>
 
             <Table className={classes.table}>
                 <TableHead>
