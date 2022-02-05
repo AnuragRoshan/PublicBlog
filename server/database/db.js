@@ -7,7 +7,9 @@ const Connection  = async ()=>{
         console.log("database connected");
 
     }catch(error){
-        console.log("error while connecting",error);
+        console.log("error while connecting MongoDB",error);
     }
 }
 export default Connection;
+
+// useNewUrlParser : is use to say that current URL is depreceted to connect mongoDB so use new
